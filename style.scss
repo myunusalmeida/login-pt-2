@@ -1,0 +1,198 @@
+$primary-color : #4766E6;
+$secondary-color: #231F20;
+$grey-color : #a8a8a8;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.line {
+    margin-top: 10px;
+    width: 1px;
+    background-color: #d3d3d3;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    min-height: 100vh;
+    width: 70%;
+    margin: 0 auto;
+
+
+    .line {
+        height: 300px;
+    }
+
+    .left {
+        width: 40%;
+
+        .logo {
+            margin-bottom: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+
+            img {
+                max-width: 130px;
+            }
+
+            .line {
+                height: 30px;
+            }
+        }
+
+        .title {
+            margin: 20px 0;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .input-form {
+            width: 100%;
+            padding: 14px 16px;
+            border: 1px solid $grey-color;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            font-size: 16px;
+
+            &::placeholder {
+                font-weight: 400;
+                font-size: 14px;
+                color: $grey-color;
+                font-family: 'Poppins', sans-serif;
+            }
+
+            &:focus {
+                outline: none;
+                border-color: $primary-color;
+                box-shadow: 0px 0px 30px rgba(71, 102, 230, 0.25);
+            }
+        }
+
+        .btn {
+            margin-top: 10px;
+            padding: 14px 16px;
+            width: 100%;
+            border: none;
+            outline: none;
+            background: $primary-color;
+            border-radius: 4px;
+            color: white;
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: .3s;
+
+            &:hover {
+                box-shadow: 0px 0px 30px rgba(71, 102, 230, 0.25);
+            }
+        }
+
+        .forgot-password {
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            font-size: 14px;
+
+            .form-group {
+                label {
+                    color: $secondary-color;
+                }
+            }
+
+            .forgot {
+                color: $primary-color;
+            }
+        }
+    }
+
+    .right {
+        width: 65%;
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 50%;
+        }
+
+        h3 {
+            margin: 20px 0 10px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 500;
+            color: $secondary-color;
+        }
+
+        p {
+            text-align: center;
+            font-size: 16px;
+            font-weight: 400;
+            color: $grey-color;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 40px 0;
+        flex-direction: column;
+        width: 90%;
+
+        .left {
+            width: 100%;
+
+            .logo {
+                .line {
+                    margin-top: 10px;
+                    width: 1px;
+                }
+
+                img {
+                    width: 100px;
+                }
+            }
+        }
+
+        .line {
+            width: 90%;
+            margin: 0 auto;
+            height: 1px;
+        }
+
+        .right {
+            width: 100%;
+
+            h3 {
+                font-size: 18px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}

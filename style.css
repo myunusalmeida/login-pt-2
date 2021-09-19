@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.line {
+  margin-top: 10px;
+  width: 1px;
+  background-color: #d3d3d3;
+}
+
+.login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 50px;
+  min-height: 100vh;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.login .line {
+  height: 300px;
+}
+
+.login .left {
+  width: 40%;
+}
+
+.login .left .logo {
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
+}
+
+.login .left .logo img {
+  max-width: 130px;
+}
+
+.login .left .logo .line {
+  height: 30px;
+}
+
+.login .left .title {
+  margin: 20px 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.login .left .input-form {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #a8a8a8;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.login .left .input-form::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  color: #a8a8a8;
+  font-family: 'Poppins', sans-serif;
+}
+
+.login .left .input-form:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  color: #a8a8a8;
+  font-family: 'Poppins', sans-serif;
+}
+
+.login .left .input-form::-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  color: #a8a8a8;
+  font-family: 'Poppins', sans-serif;
+}
+
+.login .left .input-form::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  color: #a8a8a8;
+  font-family: 'Poppins', sans-serif;
+}
+
+.login .left .input-form:focus {
+  outline: none;
+  border-color: #4766E6;
+  -webkit-box-shadow: 0px 0px 30px rgba(71, 102, 230, 0.25);
+          box-shadow: 0px 0px 30px rgba(71, 102, 230, 0.25);
+}
+
+.login .left .btn {
+  margin-top: 10px;
+  padding: 14px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #4766E6;
+  border-radius: 4px;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.login .left .btn:hover {
+  -webkit-box-shadow: 0px 0px 30px rgba(71, 102, 230, 0.25);
+          box-shadow: 0px 0px 30px rgba(71, 102, 230, 0.25);
+}
+
+.login .left .forgot-password {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+  font-size: 14px;
+}
+
+.login .left .forgot-password .form-group label {
+  color: #231F20;
+}
+
+.login .left .forgot-password .forgot {
+  color: #4766E6;
+}
+
+.login .right {
+  width: 65%;
+}
+
+.login .right img {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.login .right h3 {
+  margin: 20px 0 10px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  color: #231F20;
+}
+
+.login .right p {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: #a8a8a8;
+}
+
+@media screen and (max-width: 768px) {
+  .login {
+    padding: 40px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+  }
+  .login .left {
+    width: 100%;
+  }
+  .login .left .logo .line {
+    margin-top: 10px;
+    width: 1px;
+  }
+  .login .left .logo img {
+    width: 100px;
+  }
+  .login .line {
+    width: 90%;
+    margin: 0 auto;
+    height: 1px;
+  }
+  .login .right {
+    width: 100%;
+  }
+  .login .right h3 {
+    font-size: 18px;
+  }
+  .login .right p {
+    font-size: 14px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
